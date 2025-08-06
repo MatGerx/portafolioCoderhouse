@@ -61,15 +61,16 @@
 
 .popular-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: 1fr;
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
   text-align: left;
+  padding: 0 1rem;
 }
 
 .popular-item.destacada {
-  grid-column: span 2;
+  grid-column: span 1;
 }
 
 .popular-item {
@@ -458,5 +459,14 @@ footer img {
   }
   .section-usuario-btn {
     max-width: 15rem;
+  }
+
+  /* grid de blog */
+  .popular-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+
+  .popular-item.destacada {
+    grid-column: span 2;
   }
 }
