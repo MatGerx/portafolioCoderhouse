@@ -1,0 +1,41 @@
+// =======================
+// MIXINS
+// =======================
+@mixin fondoAltoAncho($ancho, $alto, $objfit) {
+  width: $ancho;
+  height: $alto;
+  object-fit: $objfit;
+}
+
+@mixin flexCenter($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin tablet {
+  @media (min-width: 768px) { @content; }
+}
+
+@mixin desktop {
+  @media (min-width: 1024px) { @content; }
+}
+
+@mixin buttonBase($bg, $color: $blanco) {
+  background-color: $bg;
+  color: $color;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    background-color: darken($bg, 10%);
+    transform: translateY(-3px);
+  }
+}

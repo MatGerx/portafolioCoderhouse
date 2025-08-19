@@ -1,0 +1,146 @@
+
+// =======================
+// MAIN - CAROUSEL
+// =======================
+.section-texto {
+  color: $blanco;
+  text-shadow: 1px 1px #000;
+  line-height: 1.6;
+}
+
+.section-texto h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px #000;
+}
+
+.carousel-item { height: 10rem; }
+
+.carousel-item img {
+  @include fondoAltoAncho(100%, 100%, cover);
+  object-position: center;
+}
+
+.section-article {
+  max-width: 60rem;
+  font-size: 1.1rem;
+  margin: auto;
+  font-weight: 400;
+  text-align: justify;
+  padding-bottom: 30px;
+}
+
+.carousel-caption {
+  text-shadow: 1px 1px 5px #000;
+  color: $blanco;
+  bottom: 10%;
+  position: absolute;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.carousel-caption h5 { font-size: 1rem; font-weight: 600; }
+.carousel-caption p { font-size: 0.85rem; line-height: 1.4; }
+
+// =======================
+// SECCIÓN USUARIO
+// =======================
+.section-usuario {
+  @include flexCenter(column, center, center);
+  gap: 2rem;
+  padding: 2.5rem 1.5rem;
+  background-color: $grisClaro;
+  border-top: 2px solid var(--colorElectric);
+  text-align: center;
+  font-family: $fuentePrincipal;
+}
+
+.section-usuario img {
+  height: auto;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.section_usuario-article {
+  @extend %flexBasico;
+  gap: 1rem;
+  max-width: 800px;
+}
+
+.section_usuario-article h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  color: #222;
+  text-shadow: 1px 1px #ccc;
+}
+
+.section_usuario-article p {
+  font-size: 1rem;
+  color: #444;
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.section-usuario-btn { @include buttonBase($electric); }
+
+// =======================
+// SERVICIOS
+// =======================
+.main-servicios {
+  max-width: 100vw;
+  background-color: var(--colorBeige);
+  padding: 3rem 1rem;
+}
+
+.main-servicios h2 {
+  font-size: 1.7rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #222;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.contenedor-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card-proyecto {
+  @extend %cardBase;
+  width: 100%;
+  max-width: 22rem;
+  text-align: center;
+  @extend %flexBasico;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.card-proyecto img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+
+.card-proyecto h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card-proyecto p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}

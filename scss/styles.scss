@@ -1,0 +1,32 @@
+@import "./utilities/variables"; 
+@import "./utilities/extends";   
+@import "./utilities/mixins";    
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/main";
+@import "./mq/mq";
+
+
+// =======================
+// RESETEO BÁSICO
+// =======================
+* {
+  font-family: $fuenteSecundaria !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.centrar-texto { text-align: center; }
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.brand-subtitle {
+  color: $grisMedio;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+

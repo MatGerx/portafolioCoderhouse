@@ -1,0 +1,120 @@
+
+// =======================
+// HEADER
+// =======================
+.index-header {
+  background-image: url(../img/indexHeaderBackground.png);
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.index-header-contenedor-superior { height: 10vh; }
+
+.ia-header-contenedor-superior {
+  padding: 120px 0;
+  background-image: linear-gradient(40deg, #0f0f1b 40%, #052b76);
+  text-align: center;
+  overflow: hidden;
+}
+
+.ia-header-contenedor-inferior {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  color: #000;
+  text-align: center;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: $grisOscuro;
+}
+
+.popular-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 1rem;
+}
+
+.popular-item {
+  @extend %cardBase;
+  overflow: hidden;
+}
+
+.popular-item.destacada { grid-column: span 1; }
+
+.popular-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.etiqueta {
+  display: inline-block;
+  background-color: #ffc107;
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin: 15px;
+  border-radius: 4px;
+}
+
+.popular-titulo {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0 15px 20px;
+  color: $grisOscuro;
+}
+
+header a {
+  color: $blanco;
+  text-decoration: none;
+  text-shadow: 3px 3px 10px #000;
+}
+
+header li {
+  display: inline-block;
+  padding: 20px;
+}
+
+header ul {
+  display: inline-block;
+  margin-top: 2rem;
+  margin-left: 30rem;
+}
+
+.nav-small { font-size: 0.6rem; }
+.navbar { border-bottom: 4px solid $electric }
+
+.index-h1 {
+  color: $blanco;
+  margin: 6rem auto 2rem auto;
+  font-size: 2.2rem;
+  max-width: 800px;
+  line-height: 1.3;
+  font-weight: 800;
+  text-shadow: 3px 3px 12px rgba(0,0,0,0.8);
+  text-align: center;
+}
+
+.index-header p {
+  color: $blanco;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto 4rem auto;
+  font-weight: 300;
+  padding: 0 1.5rem;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.75);
+}
+
+.index-header-btn { @include buttonBase($electric); }

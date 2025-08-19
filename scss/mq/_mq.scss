@@ -1,0 +1,36 @@
+
+// =======================
+// RESPONSIVE
+// =======================
+@include desktop {
+  .container-fluid { padding: 10px 15rem; }
+
+  .carousel-item {
+    max-height: 600px;
+    height: 40rem;
+    overflow: hidden;
+  }
+
+  .carousel-item img {
+    @include fondoAltoAncho(100%, 100%, cover);
+    object-position: center 30%;
+  }
+
+  .carousel-caption { bottom: 15%; }
+
+  .section-usuario {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .section-usuario img { max-width: 30rem; }
+  .section-usuario-article { max-width: 30rem; }
+  .section-usuario-btn { max-width: 15rem; }
+
+  .popular-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+
+  .popular-item.destacada { grid-column: span 2; }
+}
