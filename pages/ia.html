@@ -63,7 +63,7 @@
                   <a
                     class="nav-link active"
                     aria-current="page"
-                    href="./blog.html"
+                    href="blog.html"
                     >BLOG</a
                   >
                 </li>
@@ -91,9 +91,71 @@
       <!-- contenedor superior -->
 
       <section class="ia-header-contenedor-superior text-white">
-        <h1 class="index-h1 centrar-texto">IA</h1>
+        <h1 class="index-h1 centrar-texto">
+          INTELIGENCIA ARTIFICIAL PARA EL HOGAR
+        </h1>
       </section>
     </header>
+
+    <section class="ia-header-contenedor-inferior container my-5">
+      <form>
+        <div class="mb-3">
+          <label for="emailInput" class="form-label">Correo electrónico</label>
+          <input
+            type="email"
+            class="form-control"
+            id="emailInput"
+            placeholder="name@example.com"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="phoneInput" class="form-label"> Número de celular </label>
+          <input
+            type="tel"
+            class="form-control"
+            id="phoneInput"
+            name="phone"
+            placeholder="+54 9 XX XXXX XXXX"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="selectInput" class="form-label">
+            Selecciona la plaqueta que utilizas
+          </label>
+          <select class="form-select" id="selectInput">
+            <option selected disabled>Elige...</option>
+            <option value="1">ARDUINO</option>
+            <option value="2">ESP32</option>
+            <option value="3">PIC</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="selectInput" class="form-label">
+            tipo de proyecto que deseas realizar
+          </label>
+          <select class="form-select" id="selectInput">
+            <option selected disabled>Elige...</option>
+            <option value="1">Automatización de Hogar con IA</option>
+            <option value="2">vigilancia y Seguridad con IA</option>
+            <option value="3">Asistente Personal con IA para el Hogar</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="textArea" class="form-label">Comentarios</label>
+          <textarea
+            class="form-control"
+            id="textArea"
+            rows="3"
+            placeholder="Escribe aquí tu mensaje..."
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </section>
 
     <!-- ESTRUCTURA DEL FOOTER -->
     <footer>

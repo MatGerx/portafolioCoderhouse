@@ -26,7 +26,7 @@
           <div class="container-fluid">
             <a
               class="navbar-brand d-flex align-items-center flex-column"
-              href="#"
+              href="../index.html"
             >
               <img
                 src="../img/casa-iot.png"
@@ -63,7 +63,7 @@
                   <a
                     class="nav-link active"
                     aria-current="page"
-                    href="./blog.html"
+                    href="blog.html"
                     >BLOG</a
                   >
                 </li>
@@ -79,7 +79,7 @@
                   <a
                     class="nav-link active"
                     aria-current="page"
-                    href="contacto.html"
+                    href="./contacto.html"
                     >CONTACTO</a
                   >
                 </li>
@@ -94,6 +94,44 @@
         <h1 class="index-h1 centrar-texto">CONTACTO</h1>
       </section>
     </header>
+
+    <section class="ia-header-contenedor-inferior container my-5">
+      <form>
+        <div class="mb-3">
+          <label for="emailInput" class="form-label">Correo electrónico</label>
+          <input
+            type="email"
+            class="form-control"
+            id="emailInput"
+            placeholder="name@example.com"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="selectInput" class="form-label"
+            >Selecciona una opción</label
+          >
+          <select class="form-select" id="selectInput">
+            <option selected disabled>Elige...</option>
+            <option value="1">IA</option>
+            <option value="2">DOMOTICA</option>
+            <option value="3">ROBOTICA</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="textArea" class="form-label">Comentarios</label>
+          <textarea
+            class="form-control"
+            id="textArea"
+            rows="3"
+            placeholder="Escribe aquí tu mensaje..."
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </section>
 
     <!-- ESTRUCTURA DEL FOOTER -->
     <footer>
